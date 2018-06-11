@@ -935,7 +935,7 @@
       this.buttonsobj.transition(750).delay(250).attr("y", 16);
     }
     this.fig.canvas.on("mouseenter", showButtons.bind(this)).on("mouseleave", hideButtons.bind(this)).on("touchenter", showButtons.bind(this)).on("touchstart", showButtons.bind(this));
-    this.toolbar = this.fig.canvas.append("svg:svg").attr("width", 16 * this.buttons.length).attr("height", 16).attr("x", 2).attr("y", this.fig.height - 16 - 2).attr("class", "mpld3-toolbar");
+    this.toolbar = this.fig.canvas.append("svg:svg").attr("width", 16 * this.buttons.length).attr("height", 16).attr("x", 2).attr("y", this.fig.height - 60).attr("class", "mpld3-toolbar");
     this.buttonsobj = this.toolbar.append("svg:g").selectAll("buttons").data(this.buttons).enter().append("svg:image").attr("class", function(d) {
       return d.cssclass;
     }).attr("xlink:href", function(d) {
