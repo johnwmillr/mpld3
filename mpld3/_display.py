@@ -29,7 +29,7 @@ SIMPLE_HTML = jinja2.Template("""
 {{ extra_css }}
 </style>
 
-<div id={{ figid }}></div>
+<div id={{ figid }} style="text-align:center"></div>
 <script type="text/javascript">
 
   !function(mpld3){
